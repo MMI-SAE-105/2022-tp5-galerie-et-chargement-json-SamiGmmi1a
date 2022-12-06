@@ -17,7 +17,9 @@
     background-color: rgba(0,0,0,.8);
     /* Add a pointer on hover */
     /* Use a grid for easy centering */
+    display: grid;
     /* Center vertically and horizontally */
+    place-content: center;
 }
 .overlay::after {
     /* Add content : "X" */
