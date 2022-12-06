@@ -23,24 +23,49 @@
 }
 .overlay::after {
     /* Add content : "X" */
+    content: "X";
     /* White text color */
+    color: #fff;
     /* Black background color */
+    background-color: #000;
     /* Font family "sans-serif" */
+    font-family: sans-serif;
     /* Centered text */
+    text-align: center;
     /* Line height ( idem height ) */
+    line-height: 2rem;
     /* Display as a block */
+    display: block;
     /* Position absolute */
     /* 1rem from the top */
+    top: 1rem;
     /* 1rem from the right */
+    right: 1rem;
     /* 2rem width */
+    width: 2rem;
     /* 2rem height */
+    height: 2rem;
     /* White border of 2px */
+    border: solid 2px #fff;
     /* Rounded border */
+    border-radius: 25px;
 }
 .overlay>figure {
-    /* Max width of the figure : 100% */
-    /* Max height of the figure : 100% */
+    /* Max width of the figure : 100% 
+    max-width: 100%;
+    Max height of the figure : 100% 
+    max-height: 100%;*/
     /* No margin */
+    margin: 0;
     /* 1rem padding */
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 15px;
     /* White border of 2px */
+    border: solid 2px #fff;
+}
+
+.img {
+    border-radius: 10px;
+    margin: 2px;
 }
