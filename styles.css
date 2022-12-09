@@ -9,7 +9,7 @@
     width: 100vw;
     /* Full height (cover the whole page) 
     height: 100vw;
-    Stay at the top */
+    /*Stay at the top */
     top: 0;
     /* Stay at the left */
     left: 0;
@@ -70,9 +70,16 @@
     border-radius: 15px;
     /* White border of 2px */
     border: solid 2px #fff;
+
 }
 
 .img {
     border-radius: 10px;
     margin: 2px;
+}
+
+.legende {
+    color: #fff;
+    font-size: 8px;
+    text-align: center;
 }

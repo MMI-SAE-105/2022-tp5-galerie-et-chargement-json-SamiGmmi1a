@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>image 237... un chiot</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
-    <h1>Galerie</h1>
+
+
+<h1>Galerie</h1>
+
 <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quam saepe modi inventore, iusto molestias cum delectus repellat consequatur error expedita accusantium est reprehenderit quidem earum nesciunt nihil nemo veniam, quod voluptate, commodi sunt fuga. Tempore vitae consequatur quibusdam est, dolor facere nisi molestias, minus, quo voluptates quasi repellat cupiditate optio. Dolor cupiditate neque cumque nemo praesentium placeat voluptates minus perferendis porro quidem reprehenderit quam, voluptatum nam id nulla earum alias doloremque explicabo minima, corrupti ipsa velit. Molestias commodi perferendis cumque et. Beatae modi nisi vel provident. Porro nesciunt illo deserunt! Expedita maxime quos obcaecati laborum sed tenetur ipsa fugiat fugit fuga quisquam! Fuga officia asperiores tempore temporibus inventore quos neque at fugiat, ipsam odio minima hic atque alias distinctio dicta rerum possimus et dolorem necessitatibus sapiente dolor quae incidunt nihil laboriosam? Voluptate odio repudiandae ullam. Enim illum non, dolorum, suscipit, esse voluptatem libero illo ab expedita architecto at reprehenderit ipsam consequuntur inventore quia saepe dolor! Accusantium officia exercitationem porro provident ex laudantium voluptatum. Totam, quaerat. Quasi, quibusdam veniam quidem iste, eos autem accusamus laboriosam delectus praesentium necessitatibus voluptas enim corporis vel rem quisquam aperiam vero minus possimus molestiae facere saepe. Itaque, dolores molestiae cumque esse eligendi at. Quos, pariatur?</p>
-<div class="overlay">
-    <figure><img class=img src="https://picsum.photos/id/237/200/300" alt="image 237... un chiot"></figure>
+
+    
+<body x-data="{ chiot : 'https://picsum.photos/id/237/200/300'}">
+
+<div class="overlay"    
+        x-show="chiot"
+        @click="chiot = null">
+
+
+    <figure>
+        <img class=img :src="chiot" alt="image 237... un chiot">
+        <figcaption class="legende">image 237... un chiot</figcaption>
+    </figure>
+ </div>
+
+
+<img src="https://picsum.photos/id/237/20/30" alt="miniature chiot" 
+    @click="chiot = 'https://picsum.photos/id/237/200/300'">
+  
+<img src="https://picsum.photos/id/236/20/30" alt="miniature maison" 
+    @click="chiot = 'https://picsum.photos/id/236/200/300'">
+  
 </div>
 
 </body>
